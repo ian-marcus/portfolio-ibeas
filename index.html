@@ -14,6 +14,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<!-- favicon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -30,9 +32,6 @@
 	  	<!-- navigation links -->
 	  	<div class="collapse navbar-collapse" id="navLinks">
 	    	<ul class="navbar-nav">
-	      		<!-- <li class="nav-item">
-	       			<a class="nav-link text-light" href="#aboutme">About<span class="sr-only">(current)</span></a>
-	      		</li> -->
 	     		<li class="nav-item">
 	        		<a class="nav-link text-light" href="#projects">Projects</a>
 	      		</li>
@@ -47,16 +46,30 @@
 	</nav>
 	<!-- end of navbar -->
 	<!--  banner  -->
-	<div class="container">
-		<div id="banner">
-			<p id="hello">Hello, my name is</p>
-			<h1>ian marcus.</h1>
-			<h2>Full Stack Web Developer</h2>
-			<p>Electronics Engineering Technology Student with a passion for Web Design and Web Development.</p>
-			<a href="#aboutme"><button class="btn btn-dark btn-lg mt-3 px-3 py-2">About me</button></a>
+	<div id="light-bg">
+		<div class="container">
+			<div id="banner">
+				<div class="row">
+					<div class="col-md-6">
+						<p id="hello">Hello, my name is</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h1>ian marcus ibeas</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2>Full Stack Web Developer</h2>
+						<p>Electronics Engineering Technology Student with a passion for Web Design and Web Development.</p>
+						<a href="#aboutme"><button class="btn btn-dark btn-lg mt-3 px-3 py-2">About me</button></a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- end of banner -->
 	</div>
+	<!-- end of banner -->
 	<!-- main content -->
 	<div id="dark-bg">
 		<!-- about me -->
@@ -74,7 +87,7 @@
 						<p class="text-white text-justify">
 							In the future, I want to be a successful Software Engineer! 
 						</p>
-						<button class="btn btn-info mt-3 py-2">Check My Projects</button>
+						<a href="#projects"><button class="btn btn-info mt-3 py-2">Check My Projects</button></a>
 						<button class="btn btn-info mt-3 py-2">View Resume</button>
 					</div>
 					<div class="col-md-6 d-flex justify-content-center">
@@ -85,54 +98,141 @@
 		</div>
 	</div>
 	<!-- projects -->
-	<div class="container">
-		<h3 id="projects" class="my-4 text-center">Projects</h3>
-		<div class="card-group">
-			<div class="card m-3">
-				<img class="card-img-top" src="./images/podcast.jpg" alt="Card image cap">
-			    <div class="card-body">
-			      	<h5 class="card-title">Podcast Website</h5>
-			      	<p class="card-text text-justify">
-			     	 A cool but simple podcast player, matching your brand; Easy to subscribe to Apple, Google, Spotify, etc. 
-			  	  	</p>
-			      	<button class="btn btn-dark btn-sm">Check it out!</button>
-			    </div>
-			    <div class="card-footer ">
-			      	<small class="text-muted">Website still under construction.</small>
-			    </div>
+	<div id="projects">
+		<div class="container project-bg">
+			<h2  class="my-4 text-center">Projects</h2>
+			<div class="card-group">
+				<div class="card m-3">
+					<img class="card-img-top" src="./images/podcast.jpg" alt="Card image cap">
+				    <div class="card-body">
+				      	<h5 class="card-title">Podcast Website</h5>
+				      	<p class="card-text text-justify">
+				     	 A cool but simple podcast player, matching your brand; Easy to subscribe to Apple, Google, Spotify, etc. 
+				  	  	</p>
+				      	<button class="btn btn-dark btn-sm">Check it out!</button>
+				    </div>
+				    <div class="card-footer ">
+				      	<small class="text-muted">Website still under construction.</small>
+				    </div>
+				</div>
+				<div class="card m-3">
+				    <img class="card-img-top" src="./images/crypto.jpg" alt="Card image cap">
+				    <div class="card-body">
+				      <h5 class="card-title">Cryptocurrency Website</h5>
+				      <p class="card-text text-justify">
+				      	A website that aims to introduce new De-Fi tokens in the Binance Smart Chain and Etherium Blockchain. 
+				      </p>
+				      <button class="btn btn-dark btn-sm">Check it out!</button>
+				    </div>
+				    <div class="card-footer">
+				      <small class="text-muted">Website still under construction.</small>
+				    </div>
+				  </div>
+				  <div class="card m-3">
+				    <img class="card-img-top" src="./images/ecommerce.jpg" alt="Card image cap">
+				    <div class="card-body">
+				      <h5 class="card-title">Ecommmerce Website</h5>
+				      <p class="card-text text-justify">
+				      	This platform is easy to use for all online transactions with the integration of payment systems.
+				      </p>
+				      <button class="btn btn-dark btn-sm">Check it out!</button>
+				    </div>
+				    <div class="card-footer">
+				      <small class="text-muted">Website still under construction.</small>
+				    </div>
+				  </div>
+				</div>
+			</div>	
+		</div>
+		<div id="tools-bg">
+			<div class="container py-5">
+				<h2 id="tools" class="my-4 text-center">Tools</h2>
+				<div class="d-flex flex-wrap justify-content-center mb-3">
+					<div><img src="./images/logo-html5.png"></div>
+					<div><img src="./images/logo-css3.png"></div>
+					<div><img src="./images/logo-javascript.png"></div>
+					<div><img src="./images/logo-mongodb.png"></div>
+					<div><img src="./images/logo-nodejs.png"></div>
+					<div><img src="./images/logo-expressjs.png"></div>
+					<div><img src="./images/logo-react.png"></div>
+					<div><img src="./images/logo-heroku.png"></div>
+					<div><img src="./images/logo-git.png"></div>
+					<div><img src="./images/logo-sublime-text-3.png"></div>
+					<div><img src="./images/logo-postman.png"></div>
+					<div><img src="./images/logo-gitlab-ci-cd.png"></div>
+				</div>
 			</div>
-			<div class="card m-3">
-			    <img class="card-img-top" src="./images/crypto.jpg" alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Cryptocurrency Website</h5>
-			      <p class="card-text text-justify">
-			      	A website that introduces new De-Fi tokens in the Binance Smart Chain and Etherium Blockchain. 
-			      </p>
-			      <button class="btn btn-dark btn-sm">Check it out!</button>
-			    </div>
-			    <div class="card-footer">
-			      <small class="text-muted">Website still under construction.</small>
-			    </div>
-			  </div>
-			  <div class="card m-3">
-			    <img class="card-img-top" src="./images/ecommerce.jpg" alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Ecommmerce Website</h5>
-			      <p class="card-text">
-			      	This platform is easy to use for all online transactions in your store with the integrated payment system.
-			      </p>
-			      <button class="btn btn-dark btn-sm">Check it out!</button>
-			    </div>
-			    <div class="card-footer">
-			      <small class="text-muted">Website still under construction.</small>
-			    </div>
-			  </div>
+		</div>
+		<div id="contact-bg">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 id="contact" class="text-white">Got a Project? Let's connect. </h2>
+						<p class="text-white">Discuss your ideas with me and let's make it happen!</p>
+					</div>
+					<div class="col-md-6">
+						<h2 class="text-white">Let me know here.</h2>
+						<form>
+							<div class="form-group">
+								<input type="text" name="fullname" id="fullName" placeholder="What's your name?" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="email" placeholder="What's your email address?" name="email" id="contactEmail" class="form-control">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Share your ideas here." id="txt-textarea" rows="2"></textarea>
+							</div>
+							<button type="submit" class="btn btn-dark btn-block">Send</button>
+						</form>
+					</div>
+				</div>
+				
 			</div>
-		</div>	
-		
-		
-
-
+		</div>
+		<div id="socialLinks">
+			<div class="container py-5 text-white">
+				<h2>Get in Touch</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Contacts</h4>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info"><a href="#" class="fa fa-phone text-decoration-none text-white my-2"></a></button> <span>+639774475512</span>
+						</div>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info"><a href="mailto:ibeasianmarcus@gmail.com" target="_blank" class="fa fa-envelope text-decoration-none text-white my-2"></a></button> 
+							<span>ibeasianmarcus@gmail.com</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4>Professional Links</h4>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="https://www.upwork.com/freelancers/~0180ac9f50f5fa3bea" target="_blank"><img id="upwork" src="./images/upwork.png"#></a></button> <span>Upwork</span>
+						</div>
+							<div>
+								<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="https://www.linkedin.com/in/ian-marcus-ibeas-3a6823201/" target="_blank" class="fa fa-linkedin text-decoration-none text-white my-2"></a></button> <span>LinkedIn</span>
+							</div>
+							<div>
+								<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="https://gitlab.com/ian-marcus" target="_blank" class="fa fa-gitlab text-decoration-none text-white my-2"></a></button> <span>GitLab</span>
+							</div>	
+					</div>
+					<div class="col-md-3">
+						<h4>Social Links</h4>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="https://www.facebook.com/marcus.ibeas" target="_blank" class="fa fa-facebook text-decoration-none text-white my-2"></a></button> <span>Facebook</span>
+						</div>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="https://twitter.com/micoloccoo" target="_blank" class="fa fa-twitter text-decoration-none text-white my-2"></a></button><span>Twitter</span>
+						</div>
+						<div>
+							<button class="btn btn-secondary btn-contact px-3 py-2" class="btn btn-info text-white"><a href="instagram.com" target="_blank" class="fa fa-instagram text-decoration-none text-white my-2"></a></button> <span>Instagram</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="bg-dark text-center text-white">
+			<span>Designed and Developed by Ian Marcus Ibeas © 2021</span>
+		</footer>
 	<!-- js dependencies -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
