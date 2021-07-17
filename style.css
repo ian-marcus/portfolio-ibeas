@@ -39,7 +39,7 @@ p {
 }
 
 #hello {
-	color: #5bc0de;
+	color: #44BBA4;
 	font-family:'JetBrains Mono', monospace;
 	font-size: 30px;
 	font-weight: bold;
@@ -50,6 +50,11 @@ p {
 .btn {
 	background-color: #E94F37;
 	font-family: 'Roboto', sans-serif;
+}
+
+.btn-sm {
+	background-color: transparent;
+	color: black;
 }
 
 #aboutme {
@@ -66,8 +71,12 @@ p {
  
 #dark-bg {
 	background-color: #393E41;
-	height: 100vh;
-	width: 100vw;
+	/*height: 100vh;
+	width: 100vw;*/
 	/*height: 100vh;*/
 	/*clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);*/
+}
+
+.card-body {
+	background-color: #44BBA4;
 }
