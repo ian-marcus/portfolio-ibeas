@@ -2,17 +2,71 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
 }
 
-#banner	{
-	background-image: url('./images/banner.jpg');
-	position: relative; 
-	background-position: center; 
-	background-repeat: no-repeat; 
-	background-size: cover;
+.logo-im {
+	width: 80px;
+	height: 40;
+}
+
+#navLinks {
+	font-size: 20px;
+}
+
+body {
+	background: #F6F7EB;
+}
+
+#banner {
+	padding-top: 100px;
+	padding-bottom: 400px;
+	min-height: 100vh;
+    height: 100vh;
+}
+
+h1 {
+	font-size: 100px;
+	text-shadow: 0px 16px 0px rgb(0 0 0 / 10%), -16px 0px 0px rgb(0 0 0 / 10%);
+	font-weight: bold;
+}
+
+p {
+	font-family: 'JetBrains Mono', monospace;
+}
+
+#hello {
+	color: #44BBA4;
+	font-family:'JetBrains Mono', monospace;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+
+.btn {
+	background-color: #E94F37;
+	font-family: 'Roboto', sans-serif;
+}
+
+#aboutme {
+    height: 100%;
+    font-weight: bold;
+    padding-top: 100px;
 }
 
 #profilepic {
-	width: 150px; 
-	height: 150px;
+	width: 400px; 
+	height: 400px;
+	border-radius: 20px;
+}
+ 
+#dark-bg {
+	background-color: #393E41;
+	height: 100vh;
+	/*height: 100vh;*/
+	/*clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);*/
 }
