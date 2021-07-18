@@ -4,10 +4,10 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+
 html {
 	scroll-behavior: smooth;
 }
-
 
 
 .logo-im {
@@ -20,42 +20,55 @@ html {
 }
 
 #light-bg {
-	background: #F6F7EB;
+	background: white;
 	width: 100%;
 }
 
 #banner {
 	padding-top: 100px;
-	padding-bottom: 400px;
-	min-height: 100vh;
-    height: 100vh;
+	padding-bottom: 250px;
 }
 
-h1 {
-	font-size: 100px;
+#fname {
+	font-size: 5.5rem;
 	text-shadow: 0px 16px 0px rgb(0 0 0 / 10%), -16px 0px 0px rgb(0 0 0 / 10%);
 	font-weight: bold;
+}
+
+#lname {
+	font-size: 5.5rem;
+	font-weight: bolder;
+	text-shadow: 0px 16px 0px rgb(0 0 0 / 10%), -16px 0px 0px rgb(0 0 0 / 10%); 
 }
 
 h2	{
 	font-weight: bold;
 }
 
+.about-me {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.btn-1 {
+	color: black;
+}
+
 p {
-	font-family: 'JetBrains Mono', monospace;
+	font-family:'JetBrains Mono', monospace;
 }
 
 #hello {
 	color: #44BBA4;
 	font-family:'JetBrains Mono', monospace;
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: bold;
-
 }
 
 
 .btn {
-	background-color: #E94F37;
+	background-color: #44BBA4;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -65,10 +78,10 @@ p {
 }
 
 #aboutme {
-    height: 100vh;
     width: 100%;
     font-weight: bold;
     padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 #profilepic {
@@ -79,14 +92,11 @@ p {
  
 #dark-bg {
 	background-color: #393E41;
-	/*height: 100vh;
-	width: 100vw;*/
-	/*height: 100vh;*/
+	
 }
 
 #projects {
-	background-color: #3F88C5;
-	/*clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);*/
+	background-color: #F6F7EB;
 }
 
 .project-bg {
@@ -94,19 +104,83 @@ p {
 }
 
 .card-body {
-	background-color: #44BBA4;
+	background-color: #a4c3b2;
 }
 
 #tools-bg {
-	background-color: #3F88C5;
+	background-color: #eff1f3;
+	padding-bottom: 80px;
+	padding-top: 100px;
 }
 
-img {
-	width: 80px;
+#tools {
+	position: relative;
+	width: 150px;
+	width: 150px;
+	display: inline-block;
+}
+
+#tools:hover {
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 20px 20px rgba(0,0,0,.5);
+	transition: 0.5s;
+}
+
+.logo-tools {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+
+.overlay {
+	position: absolute;
+	transition: all 1.5s ease;
+	opacity: 0;
+	background-color: #283d3b;
+}
+
+#tools:hover .overlay {
+	opacity: 0.9;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+}
+
+.overlayFade {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#tools:hover .overlayFade {
+	width: 100%;
+}
+
+/*.h2-tools {
+	padding-top: 80px;
+}*/
+
+.toolsPadding {
+	padding-top: 20px;
+	padding-bottom: 100px;
 }
 
 #contact-bg {
-	background-color: #E94F37;
+	background-color: #a4c3b2;
+	padding-top: 80px;
+	padding-bottom: 150px; 
+}
+
+
+#form {
+	height: 100%;
 }
 
 input {
@@ -122,16 +196,125 @@ input {
 }
 
 .btn-contact {
-	background-color: #E94F37;
+	background-color: #6c757d;
 	font-size: 20px;
-	border-radius: 25px;
 }
 
 #socialLinks {
-	font-size:20px;
+	font-size:15px;
 }
 
 #upwork {
 	height: 15px;
 	width: 20px;
+}
+
+#gmap_canvas {
+	height: 50vh;
+	width: 100%;
+}
+
+iframe {
+	border-radius: 10px;
+}
+
+#footer {
+	color: #44BBA4;
+}
+
+/*media query*/
+#hello-sm {
+	text-align: center;
+	color: #44BBA4;
+	font-family:'JetBrains Mono', monospace;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#fullname-sm {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	text-shadow: 0px 16px 0px rgb(0 0 0 / 10%), -16px 0px 0px rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 430px) {
+	h2	{
+		text-align: center;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	#short-desc {
+		text-align: center;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	#btn-banner {
+		display: flex;
+		justify-content: center;
+
+	}
+
+	#banner {
+		padding-bottom: 140px;
+	}
+
+	#aboutme {
+		padding-bottom: 100px;
+	}
+
+	.about-me {
+		font-size: 20px;
+	}
+
+	.btn-resume {
+		display: flex;
+		justify-content: center;
+	}
+
+	.project-bg {
+		padding-top: 80px;
+	}
+
+	#tools-bg {
+		padding-top: 100px;
+	}
+
+	.toolsPadding {
+		padding-bottom: 30px;
+	}
+
+	#contact-bg {
+		padding-top: 60px;
+		padding-bottom: 0px
+	}
+
+	p {
+		font-size: 15px;
+		text-align: center;
+	}
+
+	#getInTouch {
+		text-align: left;
+	}
+
+	#socialLinks {
+		font-size: 15px;
+	}
+
+	.contacts-font-size {
+		font-size: 2rem;
+	}
+
+	#profLinks {
+		margin-top: 30px;
+	}
+
+	#social-links {
+		margin-top: 30px;
+	}
 }
