@@ -320,6 +320,10 @@ iframe {
 		font-size: 1.7rem;
 	}
 
+	#contactH2 {
+		padding-top: 40px;
+	}
+
 	#getInTouch {
 		text-align: left;
 	}
